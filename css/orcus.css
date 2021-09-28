@@ -1,0 +1,799 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+   overflow-x: hidden !important;
+}
+.orcus-page{
+   background-color: #091D24;
+   height: 100vh;
+   width: 100vw;
+}
+.orcus-glitch{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   height: 100vh;
+   width: 100%;
+}
+.orcus-glitch .orcus-image-1,
+.orcus-glitch .orcus-image-2,
+.orcus-glitch .orcus-image-3{
+   width: 90%;
+   margin: 0 auto
+}
+.orcus-glitch .orcus-image-1 img,
+.orcus-glitch .orcus-image-2 img,
+.orcus-glitch .orcus-image-3 img{
+   width: 100%;
+}
+.orcus-page .blocks{
+   width: 25%;
+   position: absolute;
+   right: 0%;
+   z-index: 3;
+}
+.orcus-page .blocks img{
+   width: 100%;
+   height: 100%;
+}
+.orcus-page-1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around !important;
+    overflow-y: hidden !important;
+}
+.orcus-page-2{
+    height: 100vh;
+    width: 100vw;
+}
+.orcus-page-1-header,
+.orcus-page-2-header,
+.orcus-page-1-paragraph{
+    color:#fff;
+}
+.orcus-page-1-header,
+.orcus-page-2-header{
+    font-family: "Spartan";
+}
+.orcus-page-1-paragraph p,
+.orcus-page-1 button{
+    font-family: "Spartan";
+    font-size: 0.9rem;
+}
+.orcus-page-1-paragraph{
+    width: 90%;
+    margin: 0 auto;
+}
+.orcus-page-1-paragraph p{
+   font-weight: 200;
+}
+.orcus-page-1-img{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.row{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.orcus-page-1-img img{
+    width: 60%;
+}
+.orcus-page-1-img .hide{
+   display: none;
+}
+.orcus-page-1 button{
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.45);
+    width: 100%;
+}
+.orcus-button-1 i{
+   color: rgba(255, 255, 255, 0.45) !important;
+}
+#orcus-button{
+   padding-bottom: 2vh !important;
+}
+.orcus-page-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.orcus-page-2-header{
+   height: 10vh;
+   padding-top: 2vh;
+   padding-bottom: 5vh;
+}
+.orcus-page-2-header h2{
+   text-align: center
+}
+
+#slider,#sliderr{
+   height: 30vh;
+}
+#sliderr{
+   padding-bottom: 20vh;
+   width: 100%;
+}
+/* cards css */
+/* card - 1 */
+#slider {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+ }
+ #slider input[type=radio] {
+    display: none;
+ }
+ #slider label {
+    cursor:pointer;
+    text-decoration: none;
+ }
+ #slides {
+    background: #fff;
+    position: relative;
+    z-index: 1;
+
+ }
+ #overflow {
+    width: 100%;
+    overflow: hidden;
+ }
+ #slide1:checked ~ #slides .inner {
+    margin-left: 0;
+ }
+ #slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+ }
+ #slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+ }
+ #slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+ }
+ #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 250px;
+ }
+ #slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+ }
+ .slide-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+ }
+ .ach-position img{
+   width: 20%;
+ }
+ #slides .slide_1 {
+    background: #2F7790;
+ }
+ #slides .slide_2 {
+    background: #2F7790;
+ }
+ #slides .slide_3 {
+    background: #2F7790;
+ }
+ #slides .slide_4 {
+    background: #2F7790;
+ }
+ #controls {
+    margin: -150px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+ }
+ #controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 25px;
+    height: 25px;
+    opacity: .4;
+ }
+ #controls label:hover {
+   opacity: 1;
+ }
+ #slide1:checked ~ #controls label:nth-child(2),
+ #slide2:checked ~ #controls label:nth-child(3),
+ #slide3:checked ~ #controls label:nth-child(4),
+ #slide4:checked ~ #controls label:nth-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+}
+ #slide1:checked ~ #controls label:nth-last-child(2),
+ #slide2:checked ~ #controls label:nth-last-child(3),
+ #slide3:checked ~ #controls label:nth-last-child(4),
+ #slide4:checked ~ #controls label:nth-last-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+ @media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+       margin: 0;
+    }
+    #slides {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+    }
+}
+/* card - 2 */
+#sliderr {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+ }
+ #sliderr input[type=radio] {
+    display: none;
+ }
+ #sliderr label {
+    cursor:pointer;
+    text-decoration: none;
+ }
+ #slidess {
+    background: #fff;
+    position: relative;
+    z-index: 1;
+ }
+ #overfloww {
+    width: 100%;
+    overflow: hidden;
+ }
+ #slid1:checked ~ #slidess .inner {
+    margin-left: 0;
+ }
+ #slid2:checked ~ #slidess .inner {
+    margin-left: -100%;
+ }
+ #slid3:checked ~ #slidess .inner {
+    margin-left: -200%;
+ }
+ #slid4:checked ~ #slidess .inner {
+    margin-left: -300%;
+ }
+ #slidess .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 250px;
+ }
+ #slidess .slid {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+ }
+ .slid-content{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: flex-start;
+   height: 100%;
+}
+ #slidess .slid_1 {
+    background: #2F7790;
+ }
+ #slidess .slid_2 {
+    background: #2F7790;
+ }
+ #slidess .slid_3 {
+    background: #2F7790;
+ }
+ #slidess .slid_4 {
+    background: #2F7790;
+ }
+ #controlss {
+    margin: -150px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+    color: azure;
+ }
+ #controlss label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 25px;
+    height: 25px;
+    opacity: .4;
+ }
+ #controlss label:hover {
+    opacity: 1;
+ }
+ #slid1:checked ~ #controlss label:nth-child(2),
+ #slid2:checked ~ #controlss label:nth-child(3),
+ #slid3:checked ~ #controlss label:nth-child(4),
+ #slid4:checked ~ #controlss label:nth-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+}
+ #slid1:checked ~ #controlss label:nth-last-child(2),
+ #slid2:checked ~ #controlss label:nth-last-child(3),
+ #slid3:checked ~ #controlss label:nth-last-child(4),
+ #slid4:checked ~ #controlss label:nth-last-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+ @media screen and (max-width: 900px) {
+    #slid1:checked ~ #controlss label:nth-child(2),
+    #slid2:checked ~ #controlss label:nth-child(3),
+    #slid3:checked ~ #controlss label:nth-child(4),
+    #slid4:checked ~ #controlss label:nth-child(1),
+    #slid1:checked ~ #controlss label:nth-last-child(2),
+    #slid2:checked ~ #controlss label:nth-last-child(3),
+    #slid3:checked ~ #controlss label:nth-last-child(4),
+    #slid4:checked ~ #controlss label:nth-last-child(1) {
+       margin: 0;
+    }
+    #slidess {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+    }
+}
+.slide,.slid,.orcus-laptop-cards{
+   padding: 1%;
+}
+.slide-content .ach-desc,
+.slid-content .ach-desc{
+   line-height: 1;
+}
+.slide-content h2,
+.slid-content h2{
+   font-size: 1rem;
+   font-family: "Montserrat";
+   font-weight: 700;
+   width: 100%;
+}
+.slide-content .ach-name,
+.slid-content .ach-name{
+   font-size: 1rem;
+   font-family: "Montserrat";
+}
+.slide-content .ach-date{
+   font-size: .8rem;
+   font-family: "Montserrat";
+}
+.slid-content .ach-date{
+   font-size: .8rem;
+   font-family: "Montserrat";
+}
+.slide .slide-content .ach-desc .highlight{
+   color: #64FFDA;
+   line-height: 2;
+   font-family: "Montserrat";
+   font-weight: 600;
+}
+.slide .slide-content .ach-desc,
+.slid .slid-content .ach-desc{
+   font-family: "Montserrat";
+}
+.slide .slide-content h2 span,
+.slid .slid-content h2 span{
+   margin-left: 10%;
+   line-height: 1;
+}
+#orcus-button-1{
+   position: relative;
+   top: 3vh;
+   left: 5vw;
+   font-size: 2rem;
+   color: #fff;
+   z-index: 3;
+}
+.slid-content,.slide-content{
+   width: 100%;
+}
+.slid-content .ach-position,
+.slide-content .ach-position{
+   width: 100%;
+   line-height:1;
+}
+.slid-content .event-place,
+.slide-content .event-place{
+   line-height:2;
+}
+.slide-content .headerr,
+.slid-content .headerr,
+.slide-content .descriptions,
+.slid-content .descriptions{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   width: 70%;
+}
+.laptop-cards{
+   display: none;
+}
+.orcus-page-1-header h2{
+   padding-top: 8%;
+}
+/* media queries */
+@media all and (min-width: 620px){
+   .orcus-page-1-img{
+      width: 60%;
+   }
+   .orcus-page-1-header h2,
+   .orcus-page-2-header h2{
+      font-size: 3rem;
+   }
+   .orcus-page-1-paragraph p,
+   #orcus-button{
+      font-size: 1rem;
+      cursor: pointer;
+   }
+   .orcus-page-2-header{
+      margin-bottom: 7vh;
+   }
+   .slide-content,.slid-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+   }
+   .slide-content h2,
+   .slid-content h2{
+      font-size: 1.3rem;
+   }
+   .slide-content .ach-name,
+   .slid-content .ach-name{
+      font-size: 1.3rem;
+      line-height: 2; 
+   }
+   .slide-content .ach-date{
+      font-size: 1rem;
+      line-height: 2; 
+   }
+   .slid-content .ach-date,
+   .slide-content .ach-date{
+      font-size: 1rem;
+   }
+   #slider,#sliderr{
+      width: 90%;
+   }
+   #orcus-button-1{
+      font-size: 4rem;
+   }
+   .slid-content .ach-desc,
+   .slide-content .ach-desc{
+      font-size: 1.3rem;
+   }
+}
+@media all and (min-width: 920px){
+   .blocky{
+      display: none;
+   }
+   .laptop-cards{
+      display: block;
+   }
+   .laptop-cards{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+   }
+   .orcus-page-1-img{
+      padding-bottom: 10vh;
+   }
+   .orcus-page-1-img img{
+      width: 40%;
+   }
+   .orcus-laptop-cards{
+      padding: 5px;
+      border-radius: 10px;
+   }
+   .orcus-laptop-cards{
+      width: 20%;
+      background-color: #2F7790;
+      margin: 2vh;
+      min-height: 20vh;
+   }
+   .orcus-page-2-header{
+      padding-bottom: 0;
+      margin-bottom: 0;
+   }
+   .orcus-laptop-cards .laptop-heading{
+      display: flex;
+   }
+   .laptop-heading h2{
+      font-size: 1.1rem;
+      padding-left: 10%;
+      color: white;
+      font-family: "Montserrat";
+   }
+   .laptop-events-place{
+      padding-top: 2vh;
+      font-size: 0.5rem;
+      color: white;
+      font-family: "Montserrat";
+   }
+   .laptop-orcus-description{
+      padding-top: 2vh;
+      font-size: 0.7rem;
+      color: white;
+   }
+   .laptop-orcus-description p{
+      font-size: 0.9rem;
+   }
+   .laptop-orcus-description .highlight{
+      color: #64FFDA;
+      font-family: "Montserrat";
+      font-size: 0.9rem;
+   }
+   .laptop-cards .laptop-events-place h2{
+      font-size: 1.3rem;
+   }
+}
+@media all and (min-width: 1200px){
+   .orcus-glitch .orcus-image-1,
+   .orcus-glitch .orcus-image-2,
+   .orcus-glitch .orcus-image-3{
+      width: 30%;
+   }
+   .laptop-cards{
+      padding-left: 16%;
+   }
+   .orcus-laptop-cards{
+      width: 20%;
+      background-color: #2F7790;
+      margin: 2vh;
+      min-height: 20vh;
+   }
+   #orcus-button-1{
+      font-size:2rem;
+   }
+   .orcus-page-1-header h2{
+      font-size: 2rem;
+   }
+   .orcus-page-1-img{
+      width: 30%;
+   }
+   .row{
+      display: flex;
+      flex-direction: row;
+      padding-left: 10%;
+      justify-content: center;
+   }
+   .orcus-page-1-img,
+   .column{
+      width: 40%;
+   }
+   .orcus-page-1-img .hide{
+      display: block;
+      width: 100%;
+   }
+   .orcus-page-1-img .show{
+      display: none;
+   }
+   .orcus-page-1-paragraph p{
+      font-size: 1.2rem;
+   }
+   #orcus-button{
+      font-size: 1rem;
+   }
+   .orcus-page-1-img{
+      margin: 0;
+   }
+   .laptop-orcus-description p{
+      font-size: 1rem;
+   }
+   .orcus-page-1{
+      justify-content: space-evenly;
+   }
+   .orcus-page .blocks{
+      width:13%;
+  }
+  .laptop-heading h2{
+   font-size: 1rem;
+   }
+   
+   .laptop-events-place h1{
+      font-size: 0.9rem;
+   }
+   .laptop-events-place h2{
+      font-size: 0.9rem;
+   }
+   .laptop-orcus-description{
+      overflow: hidden;
+   }
+   .laptop-orcus-description p{
+      font-size: 0.9rem;
+   }
+   .laptop-orcus-description{
+      height: fit-content !important;
+      /* overflow:scroll !important; */
+   }
+}
+@media all and (min-width: 1400px){
+   .orcus-laptop-cards{
+      margin: 2vh;
+      padding: 13px;
+   }
+   .orcus-page-1-paragraph p{
+      font-size: 1.3rem;
+   }
+   #orcus-button{
+      font-size: 1.2rem;
+   }
+   .orcus-page-1-header h2{
+      font-size: 2.4rem;
+   }
+   .orcus-laptop-cards{
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+   .laptop-heading h2{
+      font-size: 1.1rem;
+   }
+   .laptop-heading h1{
+      font-size: 1.1rem;
+   }
+   .laptop-events-place h1{
+      font-size: 1.1rem;
+   }
+   .laptop-events-place h2{
+      font-size: 1.1rem;
+   }
+   .laptop-orcus-description p{
+      font-size: 1rem;
+   }
+}
+@media all and (min-width: 1750px){
+   .laptop-heading h2{
+      font-size: 1.8rem;
+   }
+   .laptop-events-place h1{
+      font-size: 1.4rem;
+   }
+   .laptop-events-place h2{
+      font-size: 1.4rem;
+   }
+   .laptop-orcus-description p{
+      font-size: 1.3rem;
+   }
+   .laptop-heading img{
+      width: 15%;
+   }
+   #orcus-button-1{
+      font-size: 3rem;
+   }
+}
+@media all and (min-width: 2030px){
+   .orcus-page-1-paragraph p{
+      font-size: 2rem;
+      line-height: 1.5;
+   }
+   #orcus-button{
+      font-size: 1.8rem;
+   }
+   .orcus-page-1-header h2{
+      font-size: 3.6rem;
+   }
+   .laptop-heading h2{
+      font-size: 2.2rem;
+   }
+   .laptop-events-place h1{
+      font-size: 1.7rem;
+   }
+   .laptop-events-place h2{
+      font-size: 1.5rem;
+   }
+   .laptop-orcus-description .highlight{
+      font-size: 2.7rem;
+   }
+   .laptop-orcus-description p{
+      font-size: 2.1rem;
+   }
+   #orcus-button-1{
+      font-size: 3.5rem;
+   }
+   .laptop-cards .laptop-events-place h2{
+      font-size: 2.3rem;
+   }
+}
+@media all and (min-width: 2730px){
+   .orcus-page-1-paragraph p{
+      font-size: 3rem;
+      line-height: 1.5;
+   }
+   #orcus-button{
+      font-size: 2.8rem;
+   }
+   .orcus-page-1-header h2{
+      font-size: 4.2rem;
+   }
+   .laptop-heading h2{
+      font-size: 2.7rem;
+   }
+   .laptop-events-place h1{
+      font-size: 2.5rem;
+   }
+   .laptop-events-place h2{
+      font-size: 2.4rem;
+   }
+   .laptop-orcus-description .highlight{
+      font-size: 3.2rem;
+   }
+   .laptop-orcus-description p{
+      font-size: 2.8rem;
+   }
+   #orcus-button-1{
+      font-size: 5.6rem;
+   }
+}
+@media all and (min-width: 3400px){
+   .orcus-page-1-paragraph p{
+      font-size: 3.5rem;
+      line-height: 1.5;
+   }
+   .orcus-page-1-paragraph {
+      padding-bottom: 2vh;
+   }
+   #orcus-button{
+      font-size: 3.1rem;
+      padding-bottom: 2vh !important;
+   }
+   .orcus-page-1-header h2,
+   .orcus-page-2-header h2{
+      font-size: 4.5rem;
+   }
+   .laptop-heading h2{
+      font-size: 3.5rem;
+   }
+   .laptop-events-place h1{
+      font-size: 3rem;
+   }
+   .laptop-events-place h2{
+      font-size: 2.9rem;
+   }
+   .laptop-orcus-description .highlight{
+      font-size: 3.1rem;
+   }
+   .laptop-orcus-description p{
+      font-size: 3.2rem;
+   }
+}

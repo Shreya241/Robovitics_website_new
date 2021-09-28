@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.kartavya{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.blockks{
+    height: 5vh;
+    width:100%;
+}
+.blockks img{
+    width: 100%;
+}
+.wrapper{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin:0 7%;
+}
+.footer-img{
+    height: 25vh;
+    display: flex;
+    bottom: 0;
+}
+
+.wrapper p{
+    color: black;
+    font-size: 0.9rem;
+} 
+.wrapper .small-para{
+    margin-bottom: 1vh;
+    height: 5%;
+    font-family: "Montserrat";
+}
+.wrapper .headinggg h1{
+    margin: 2vh 0;
+    font-family: "Spartan";
+}
+.wrapper .para{
+    font-family: "Montserrat";
+    word-spacing: 0.25rem;
+    font-size: 1rem;
+    color: #e4e4e4;
+}
+.footer-img {
+    display: flex;
+    justify-content:space-between;
+}
+.footer-img .bottom-right,
+.footer-img .bottom-right img,
+.footer-img .bottom-left img{
+    height: 100%;
+}
+.wrapper .for-laptop{
+    display: none;
+}
+.kartavya .blks{
+    display: none;
+}
+.bottom-image{
+    display: none;
+}
+.wrapper .siding .heading{
+    padding-bottom: 6vh;
+}
+.heading h1{
+    font-size: 2.5rem;
+}
+
+/* media queries */
+@media all and (min-width: 510px){
+    .footer-img{
+        height: 40vh;
+    }
+}
+@media all and (min-width: 680px){
+    .wrapper p{
+        font-size: 1.2rem;
+    }
+    .wrapper .headinggg h1{
+        font-size: 3rem;
+        font-weight: 900;
+    }
+}
+@media all and (min-width: 960px){
+    .wrapper .headinggg h1{
+        font-size: 4.5rem;
+    }
+    .wrapper p{
+        font-size: 1.5rem;
+    }
+}
+@media all and (min-width: 1200px){
+    .footer-img .bottom-right{
+        display: none;
+    }
+    .wrapper .for-laptop{
+        display: block;
+        width: auto;
+        height: 100%;
+    } 
+    .wrapper{
+        padding-left: 10%;
+        flex-direction: row;
+    }
+    .wrapper .headinggg h1{
+        font-size: 2rem;
+    }
+    .wrapper .siding{
+        width: 50%;
+    }
+    .wrapper{
+        height: 100%;
+    }
+    .wrapper .for-laptop .bttm{
+        height: 100%;
+    }
+    .wrapper .for-laptop .bttm img{
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+    }
+    .footer-img{
+        width: 15%;
+    }
+    .blockks, 
+    .footer-img{
+        display: none;
+    }
+    .kartavya .blks{
+        display: block;
+        position: absolute;
+        right: -0px;
+    }
+    .siding{
+        padding-top: 27vh;
+    }
+    .small-para p,
+    .headinggg h1,
+    .para p{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .bottom-image{
+        display: block;
+        height: 100vh;
+        position: absolute;
+    }
+    .bottom-image .bottom-left-image img{
+        position: absolute;
+        bottom: 0px;
+    }
+    .blockssss{
+        display: block;
+        width: 100%;
+        position: absolute;
+    }
+    .wrapper .siding .heading{
+        padding-bottom: 1vh;
+    }
+}
+@media all and (min-width: 1500px){
+    .siding .small-para p{
+        font-size:1.5rem;
+    }
+    .siding .headinggg h1{
+        font-size: 2.6rem;
+    }
+    .siding .para p{
+        font-size: 1.4rem;
+    }
+}
+@media all and (min-width: 1700px){
+    .siding .small-para p{
+        font-size:1.7rem;
+    }
+    .siding .headinggg h1{
+        font-size: 2.8rem;
+    }
+    .siding .para p{
+        font-size: 1.6rem;
+    }
+}
+@media all and (min-width: 2250px){
+    .siding .small-para p{
+        font-size:2.1rem;
+    }
+    .siding .headinggg h1{
+        font-size: 3rem;
+    }
+    .siding .para p{
+        font-size: 1.9rem;
+    }
+}
+@media all and (min-width: 2700px){
+    .siding .small-para p{
+        font-size:2.9rem;
+    }
+    .siding .headinggg h1{
+        font-size: 3.5rem;
+    }
+    .siding .para p{
+        font-size: 2.2rem;
+    }
+}
+@media all and (min-width: 3400px){
+    .siding .small-para p{
+        font-size:4.2rem;
+    }
+    .siding .headinggg h1{
+        font-size: 4.6rem;
+    }
+    .siding .para p{
+        font-size: 3.4rem;
+    }
+}

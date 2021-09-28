@@ -1,0 +1,507 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-brand {
+  margin-left: 56px;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navbar-toggler {
+  border: none;
+  /*-background:transparent;--*/
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+canvas {
+  background: white;
+  display: flex;
+  background: radial-gradient(#fff, #ddd);
+  transform-origin: 0 0;
+  width: 100vw;
+  height: 100vh;
+}
+.ui {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  width: 120vw;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.ui p {
+  font-size: 11px;
+  font-weight: 700;
+}
+.ui p.zoom {
+  margin-bottom: 5px;
+}
+.ui p.zoom span {
+  margin-right: 5px;
+  border: solid 1px #777;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.ui p.zoom span.zoomin {
+  padding: 2px 5px;
+}
+.ui p.zoom span.zoomout {
+  padding: 2px 8px;
+}
+.ui p.zoom span:hover {
+  background: black;
+  /* color: white; */
+}
+
+.nav-item {
+  font-size: 12px;
+}
+.nav-link {
+  font-size: 12px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav {
+  background-color: transparent;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.header {
+  background-color: transparent;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.hamburger {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: white;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+}
+@media only screen and (max-width: 1130px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    background-color: black;
+    padding-right: 140px;
+    font-size: 20px;
+  }
+
+  .robo {
+    visibility: hidden;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    top: 13px;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+    margin-top: 0px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    color: white;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    background-color: black;
+    padding-right: 140px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    width: 96%;
+    height: 94%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    background-color: black;
+    padding-right: 140px;
+    font-size: 20px;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+  padding: 10px;
+}
+
+.topnav #myLinks {
+  display: none;
+  height: 100%;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media only screen and (min-width: 1025px) {
+  .icon {
+    visibility: hidden;
+  }
+  .topnav {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 279px) {
+  .logo {
+    width: 20px;
+  }
+}
+
+.topnav {
+  position: fixed;
+  width: 100vw;
+  z-index: 5;
+}
+
+/* topnav */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
+
+.qwerty,
+::selection {
+  text-decoration: none;
+  color: none;
+  background: none;
+}
+
+body,
+html {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: whitesmoke;
+  -webkit-font-smoothing: antialiased;
+  transition: 0.33s ease all;
+  padding: 0%;
+}
+
+.nav-open main {
+  transform: scale(0.8);
+}
+
+.nav-trigger {
+  position: fixed;
+  z-index: 4;
+  top: 40px;
+  right: 40px;
+  height: 44px;
+  width: 44px;
+
+  overflow: hidden;
+  color: transparent;
+  white-space: nowrap;
+  text-indent: 100%;
+}
+
+.nav-trigger span,
+.nav-trigger span::before,
+.nav-trigger span::after {
+  position: absolute;
+  height: 4px;
+  width: 36px;
+  background: #999999;
+}
+
+.nav-trigger span {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.33s ease all;
+}
+
+.nav-trigger span::before,
+.nav-trigger span::after {
+  content: "";
+  top: 0;
+  left: 0;
+  transition: 0.33s ease all;
+}
+
+.nav-trigger span::before {
+  transform: translateY(-12px);
+}
+
+.nav-trigger span::after {
+  transform: translateY(12px);
+}
+
+.nav-trigger:hover span,
+.nav-trigger:hover span::before,
+.nav-trigger:hover span::after {
+  background: grey;
+}
+
+.nav-open .nav-trigger span {
+  background: transparent;
+}
+
+.nav-open .nav-trigger span::before,
+.nav-open .nav-trigger span::after {
+  background: #999999;
+}
+
+.nav-open .nav-trigger span::before {
+  transform: rotate(-45deg);
+}
+
+.nav-open .nav-trigger span::after {
+  transform: rotate(45deg);
+}
+
+.overlay {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1c1d21;
+  opacity: 0;
+  visibility: hidden;
+  /* transition: opacity .5s, visibility .5s; */
+}
+
+.nav-open .overlay {
+  opacity: 0.6;
+  visibility: visible;
+}
+
+.nav-container {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  /* max-width: 460px; */
+  padding: 2em 3.5em;
+  background: #1c1d21;
+  overflow: auto;
+  transform: translateZ(0);
+  transform: translateX(350%);
+  transition: transform 0.5s cubic-bezier(0.07, 0.23, 0.34, 1);
+}
+
+.nav-open .nav-container {
+  transform: translateX(0);
+}
+
+.nav-container h2 {
+  font-size: 45px;
+  font-weight: bold;
+  /*text-transform: uppercase;*/
+  color: #aaaaaa;
+  margin: 1.5em 0;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+}
+
+.nav a {
+  display: block;
+  padding: 0.4em 0;
+  font-size: 25px;
+  font-weight: lighter;
+
+  color: white;
+  transform: translateZ(0);
+}
+
+.nav-open .nav a {
+  animation: slide-in 0.4s 0.2s backwards;
+}
+
+.nav-open .nav li:nth-of-type(2) a {
+  animation-delay: 0.3s;
+}
+
+.nav-open .nav li:nth-of-type(3) a {
+  animation-delay: 0.4s;
+}
+
+.nav-open .nav li:nth-of-type(4) a {
+  animation-delay: 0.5s;
+}
+
+.nav-open .nav li:nth-of-type(5) a {
+  animation-delay: 0.6s;
+}
+
+.nav-open .nav li:nth-of-type(6) a {
+  animation-delay: 0.7s;
+}
+
+@media only screen and (max-width: 760px) {
+  .nav-container {
+    width: 100vw;
+    transition: 0.33s ease all;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media only screen and (min-width: 1025px) {
+  .nav-container {
+    visibility: hidden;
+  }
+  .nav-trigger {
+    visibility: hidden;
+  }
+}
