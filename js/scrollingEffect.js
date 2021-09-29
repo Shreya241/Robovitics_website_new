@@ -8,8 +8,11 @@ const element7 = document.getElementById('rtyuio')
 const element8 = document.getElementById('dfghjk')
 const element9 = document.getElementById('cvbnxc')
 
-// document.getElementById("navie").style.display = "none";
-
+// orcus glitch
+const glitch = document.getElementById("orcus-glitch");
+glitch.style.display = "";
+document.getElementById("orcus-page-1").style.display = "none";
+document.getElementById("orcus-page-2").style.display = "none";
 
 document.body.addEventListener("scroll", (t) => {
     if(document.body.scrollTop / window.innerHeight > -7 && document.body.scrollTop / window.innerHeight < 0.8){
@@ -68,6 +71,31 @@ document.body.addEventListener("scroll", (t) => {
         element7.classList.remove("active")
         element8.classList.remove("active")
         element9.classList.remove("active")
+
+        // orcus glitch
+        setTimeout(() => {
+            glitch.style.display = "none";
+        
+            const orcusbutton = document.getElementById('orcus-button');
+            document.getElementById("orcus-page-1").style.display = "flex";
+            document.getElementById('orcus-button-1').style.display = "none";
+            document.getElementById("orcus-page-2").style.display = "none";
+            orcusbutton.addEventListener('click', () => {
+                // console.log("hehe")
+                document.getElementById("orcus-page-1").style.display = "none";
+                document.getElementById("orcus-page-2").style.display = "block";
+                document.getElementById('orcus-button-1').style.display = "block"
+            })
+        
+            const orcus1button = document.getElementById('orcus-button-1');
+            orcus1button.addEventListener('click', () => {
+                // console.log("hehe")
+                document.getElementById("orcus-page-2").style.display = "none";
+                document.getElementById("orcus-page-1").style.display = "block";
+                document.getElementById("orcus-page-1").style.display = "flex";
+                document.getElementById('orcus-button-1').style.display = "none"
+            })
+        }, 4000)
     }
     if((document.body.scrollTop / window.innerHeight > 5) && (document.body.scrollTop / window.innerHeight < 6)){
         element1.classList.remove("active")
